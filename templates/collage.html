@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage Maker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Collage Maker</h1>
+        <form action="/generate_pdf" method="POST">
+            <label for="rsid_code">Enter RSID Code:</label>
+            <input type="text" id="rsid_code" name="rsid_code" required>
+            <button type="submit">Generate PDF</button>
+        </form>
+    </div>
+</body>
+</html>
